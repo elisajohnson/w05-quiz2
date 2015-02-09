@@ -1,0 +1,9 @@
+<h1>Add a User!</h1>
+
+<!-- starting loop with do and use f as variable for form inputs -->
+<%= form_for @user do |f| %>
+  Name: <%= f.text_field :name %>
+  Email: <%= f.text_field :email %>
+  Date of Birth: <%= f.text_field :dob %>
+  <%= f.submit "Add this User!" %>
+<% end %>
